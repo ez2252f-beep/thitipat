@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อาคารดิ้น - เมนูอาหารคลีน</title>
+    <style>
+        /* ส่วนหัว */
+        header {
+            background: #333;
+            padding: 10px 0;
+            border-bottom: 3px solid #0779e4;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* เมนูแนวนอน */
+        nav table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #444;
+            margin-top: 10px;
+        }
+
+        nav td {
+            text-align: center;
+            padding: 15px 0;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 20%; /* 5 ช่อง = 20% ต่อช่อง */
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        nav td:hover {
+            background: #0779e4;
+        }
+
+        /* คอนเทนต์สองคอลัมน์ */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .left-column {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .right-column {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .menu-item {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            margin: 2px 0;
+        }
+
+        .menu-desc {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+<body onLoad="MM_preloadImages('images/Untitled-1_05.jpg','images/Untitled-1_12.jpg','images/Untitled-1_10.jpg','images/Untitled-1_07.jpg','images/Untitled-1_08.jpg')">
+    <header>
+        <h1>อาหารคลีน : นวัตกรรมสุขภาพสำหรับคนรุ่นใหม่</h1>
+        <nav>
+            <table>
+                <tr>
+                    <td><a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','images/Untitled-1_12.jpg',1)"><img src="images/Untitled-1_12.jpg" alt="" width="320" height="74" id="Image4"></a></td>
+                    <td><a href="aboutindex.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','images/Untitled-1_05.jpg',1)"><img src="images/Untitled-1_05.jpg" alt="" width="250" height="78" id="Image5"></a></td>
+                    <td><a href="memuindex.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','images/Untitled-1_10.jpg',1)"><img src="images/Untitled-1_10.jpg" alt="" width="227" height="77" id="Image9"></a></td>
+                    <td><a href="articlesindex.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/Untitled-1_07.jpg',1)"><img src="images/Untitled-1_07.jpg" alt="" width="190" height="76" id="Image7"></a></td>
+                    <td><a href="about.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/Untitled-1_08.jpg',1)"><img src="images/Untitled-1_08.jpg" width="182" height="89" id="Image8"></a></td>
+                </tr>
+            </table>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><img src="images/k.jpg" width="670" height="402"></td>
+              </tr>
+            </table>
+            <table width="300" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p>สลัดอกไก่ย่าง</p>
+                    </blockquote>
+                  </blockquote>
+                </blockquote></td>
+              </tr>
+            </table>
+            <h3>&nbsp;</h3>
+            <div class="menu-item"></div>
+          <table width="1378" height="294" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="675" height="294"><img src="images/91bbd9c2511779da6240e10fb4c67a1f.jpg" width="583" height="339"></td>
+                <td width="703"><span class="menu-item"><br>
+                </span><img src="images/GreenSmoothie.jpg" width="543" height="362"></td>
+              </tr>
+          </table>
+          <table width="1377" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="675"><blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <p>ข้าวกล้อง + ไข่ต้ม + ผักลวก</p>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote></td>
+              <td width="702"><blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <blockquote>
+                        <blockquote>
+                          <p>สมูทตี้ผักผลไม้รวม</p>
+                        </blockquote>
+                      </blockquote>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote></td>
+            </tr>
+          </table>
+      </div>
+
+        <div class="right-column"></div>
+    </div>
+</body>
+</html>
